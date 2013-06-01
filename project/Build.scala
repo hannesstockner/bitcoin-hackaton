@@ -18,7 +18,7 @@ object ApplicationBuild extends Build {
   val main = play.Project(appName, appVersion, appDependencies).settings(
     // Add your own project settings here 
     resolvers += "mvnrepository" at "http://repo1.maven.org/maven2/",
-    resolvers += "Local Maven Repository" at "file://" + Path.userHome.absolutePath + "/.m2/repository"     
+    resolvers += "Local Maven Repository" at "file:/" + Path.userHome.absolutePath + "/.m2/repository"     
   )
 
 }
